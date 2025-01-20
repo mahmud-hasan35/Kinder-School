@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+}
+li {
+    list-style: none;
+    color: black;
+    margin-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+body {
+    font-family: "Quicksand", serif;
+    font-style: normal;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-list {
+    display: flex;
+}
+.home a {
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+
+}
+.about a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #05D4DF;
+}
+.Facilities a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #05D4DF;
+
+}
+.Admission a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #5D58EF;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.school {
+    font-size: 25px;
+    font-weight:500;
+    margin-left: 10px;
+}
+.primary-btn {
+    padding: 10px 50px;
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.header-icon {
+    display: none;
+}
+
+/* navbar responsive */
+
+@media screen and (max-width: 575px) {
+    .school, .nav-list, .primary-btn {
+        display: none;
+    }
+    img {
+        width: 100%;
+    }
+    .header-icon {
+        display: block;
+        font-size: 30px;
+        padding-right: 10px;
+    }
+    .container {
+        width: 100%;
+        border-bottom: solid 1px rgba(255, 166, 0, 0.679);
+        padding-bottom: 10px;
+    }
+}
+
+/* banner */
+
+.banner-section {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+}
+.banner-description {
+width: 640px;
+}
+.banner-heading {
+font-size: 56px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.orange {
+    color: orange;
+}
+.blue {
+    color: skyblue;
+}
+.banner-btn {
+background-color: black;
+color: white;
+padding: 10px 45px;
+margin-top: 24px;
+border-radius: 5px;
+}
+
+/* banner heading responsive */
+
+@media screen and (max-width:365px) {
+    .banner-section {
+        flex-direction: column-reverse;    
+    }
+    .banner-description {
+        width: 100%;
+        text-align: center;
+    }
+    .img {
+        width: 100%;
+    }
+}
+@media screen and (min-width:366px)and (max-width:575px) {
+    .banner-section {
+        flex-direction: column-reverse;    
+    }
+    .banner-description {
+        width: 100%;
+        text-align: center;
+    }
+    .img {
+        width: 100%;
+    }
+}
