@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-*{
+
+* {
     margin: 0;
 }
+
 li {
     list-style: none;
     color: black;
     margin-left: 20px;
 }
+
 a {
     text-decoration: none;
     color: black;
 }
+
 body {
     font-family: "Quicksand", serif;
     font-style: normal;
@@ -19,48 +23,64 @@ body {
 .container {
     width: 1160px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: px;
 }
+
+
+.marquee-text {
+    color:chocolate;
+    font-weight: 800;
+    font-size: 20px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
+
 .nav-list {
     display: flex;
 }
+
 .home a {
     font-size: 20px;
     font-weight: bold;
     color: orange;
 
 }
-.about a{
+
+.about a {
     font-size: 20px;
     font-weight: 500;
     color: #05D4DF;
 }
+
 .Facilities a {
     font-size: 20px;
     font-weight: 500;
     color: #05D4DF;
 
 }
+
 .Admission a {
     font-size: 20px;
     font-weight: 500;
     color: #5D58EF;
 }
+
 .logo {
     display: flex;
     align-items: center;
 }
+
 .school {
     font-size: 25px;
-    font-weight:500;
+    font-weight: 500;
     margin-left: 10px;
 }
+
 .primary-btn {
     padding: 10px 50px;
     background-color: orange;
@@ -68,6 +88,7 @@ nav {
     color: white;
     border: none;
 }
+
 .header-icon {
     display: none;
 }
@@ -75,20 +96,27 @@ nav {
 /* navbar responsive */
 
 @media screen and (max-width: 575px) {
-    .school, .nav-list, .primary-btn {
+
+    .school,
+    .nav-list,
+    .primary-btn {
         display: none;
     }
+
     img {
         width: 100%;
     }
+
     .header-icon {
         display: block;
         font-size: 30px;
         padding-right: 10px;
     }
+
     .container {
         width: 100%;
     }
+
     .simple-border {
         border-bottom: solid 1px rgba(255, 166, 0, 0.679);
         padding-bottom: 10px;
@@ -104,41 +132,49 @@ nav {
     gap: 50px;
 
 }
+
 .banner-description {
-width: 640px;
+    width: 640px;
 }
+
 .banner-heading {
-font-size: 56px;
-font-weight: bold;
-margin-bottom: 10px;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
+
 .orange {
     color: orange;
 }
+
 .blue {
     color: skyblue;
 }
+
 .banner-btn {
-background-color: black;
-color: white;
-padding: 10px 45px;
-margin-top: 24px;
-border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px 45px;
+    margin-top: 24px;
+    border-radius: 5px;
 }
 
 /* banner heading responsive */
 
 @media screen and (max-width:575px) {
-    header{
+    header {
         padding: 10px;
     }
+
     .banner-section {
-        flex-direction: column-reverse;    
+        flex-direction: column-reverse;
     }
+
     .banner-description {
         width: 100%;
         text-align: center;
     }
+
     .banner-heading {
         font-size: 35px;
     }
@@ -150,42 +186,52 @@ border-radius: 5px;
 main {
     margin-top: 60px;
 }
+
 .main-Curriculum {
-background-image: url(assets/bg.png);
-background-size: cover;
+    background-image: url(assets/bg.png);
+    background-size: cover;
 }
+
 .Curriculum-heading {
     text-align: center;
     font-size: 35px;
     font-weight: bold;
 }
+
 .card {
     margin-top: 130px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-.main-card,.main-card1,.main-card2 {
 
-padding: 50px 60px;
-text-align: center;
-background: linear-gradient(to top,#FFFFFF, hsl(198, 100%, 94%));
-border-radius: 18px;
-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.05);
-}
-.main-card1 {
-background: linear-gradient(to top,hsl(0, 0%, 100%), hsl(41, 100%, 96%));
-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.05);
-}
+.main-card,
+.main-card1,
 .main-card2 {
-background: linear-gradient(to top, hsl(0, 0%, 100%), #F2E8FF);
-box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.05);
+
+    padding: 50px 60px;
+    text-align: center;
+    background: linear-gradient(to top, #FFFFFF, hsl(198, 100%, 94%));
+    border-radius: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
+
+.main-card1 {
+    background: linear-gradient(to top, hsl(0, 0%, 100%), hsl(41, 100%, 94%));
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-card2 {
+    background: linear-gradient(to top, hsl(0, 0%, 100%), #F2E8FF);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
 .kinder-title {
-font-size: 24px;
-font-weight: 700;
-margin-top: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 32px;
 }
+
 .Curriculum-paragrap {
     font-size: 17px;
     line-height: 28px;
@@ -193,9 +239,22 @@ margin-top: 32px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .main-span {
     color: #64C8FF;
+    font-weight: bold;
 }
+
+.main-span1 {
+    color: #F0AA00;
+    font-weight: bold;
+}
+
+.main-span2 {
+    color: #8700FF;
+    font-weight: bold;
+}
+
 .left-right {
     margin-top: 80px;
     margin-bottom: 30px;
@@ -205,12 +264,14 @@ margin-top: 32px;
     gap: 20px;
     font-weight: bold;
 }
+
 .left {
     padding: 15px 21px;
     background-color: orange;
     color: white;
     border-radius: 50%;
 }
+
 .right {
     padding: 15px 21px;
     background-color: orange;
@@ -219,13 +280,294 @@ margin-top: 32px;
 }
 
 /* main responsive */
-
 @media screen and (max-width: 575px) {
     main {
         padding: 10px;
     }
+
     .card {
         grid-template-columns: repeat(1, 1fr);
         gap: 30px;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 777px) {
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 10px;
+    }
+}
+
+/*  stories */
+
+.stories-section {
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3), #FFFFFF),
+        url('assets/bg.png');
+    background-size: cover;
+}
+
+.stories-heading {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.stories-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+}
+
+/* big card */
+.kids-img {
+    border-radius: 16px 16px 0 0;
+}
+
+.big-card {
+    border-radius: 16px;
+    background-color: #ffffffc2;
+    height: 630px;
+}
+
+.card-text {
+    padding: 40px;
+}
+
+.stories-btn-div {
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 35px;
+}
+
+.card-heading {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card-paragrap {
+    font-size: 15px;
+    margin-top: 40px;
+    line-height: 28px;
+    color: #666666;
+}
+
+/* small card */
+
+.small-grid-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.small-btn {
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 35px;
+}
+
+.small-card {
+    border-radius: 16px;
+    background-color: #ffff;
+    height: 301px;
+
+}
+
+.card-find {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.card-find-div {
+    padding: 35px;
+}
+
+.stories-btn {
+    background-color: #3CD8E8;
+    color: white;
+    border-radius: 47px;
+    padding: 15px 19px;
+    border: none;
+}
+
+.stories-btn1, .stories-btn2 {
+    background-color: #95B226;
+    color: white;
+    border-radius: 47px;
+    padding: 15px 19px;
+    border: none;
+}
+.stories-btn2 {
+    background-color: #5D58F0;
+}
+
+.stories-end-btn {
+    text-align: center;
+
+}
+
+button {
+    background-color: black;
+    padding: 15px 50px;
+    border-radius: 30px;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 575px) {
+    .stories-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .small-grid-cards {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        gap: 10px;
+    }
+
+    .big-card {
+        display: none;
+    }
+
+    .kids-img {
+        width: 100%;
+    }
+
+    .small-btn {
+        margin-top: -100px;
+        margin-left: 25px;
+    }
+
+    .stories-btn1 {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+    .stories-btn2 {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+
+
+    .card-find {
+        font-size: 12px;
+    }
+
+    .small-card {
+        height: 260px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 575px) and (max-width: 1165px) {
+
+    .stories-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .small-grid-cards {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        gap: 10px;
+    }
+
+    .big-card {
+        display: none;
+    }
+
+    .stories-section {
+        background: none;
+    }
+
+    .stories-end-btn {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* footer */
+
+footer {
+    background-color: #01ACFD;
+    padding: 120px 174px 222px 146px;
+}
+
+.footer-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-description {
+    width: 357px;
+    font-size: 20px;
+    margin-top: 30px;
+    color: #FFFFFF;
+}
+.footer-p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 10px;
+}
+
+.about-school {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.list-footer {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* footer responsive */
+
+@media screen and (max-width: 575px) {
+    footer {
+        padding: 100px;
+    }
+    .footer-section {
+        flex-direction: column;
+      
+    }
+    
+
+    .touch-connect {
+        display: flex;
+        gap: 5px;
+    }
+    .footer-description {
+        width: 260px;
+        font-size: 12px;
+    }
+    .about-school {
+        font-size: 16px;
+        width: 120px;
+        margin-top: 20px;
+    }
+    .list-footer {
+        font-size: 16px;
+    }
+}@media screen and (min-width: 575px) and (max-width:775px) {
+    .footer-section {
+        flex-direction: column;
+      
     }
 }
